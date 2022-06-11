@@ -1,0 +1,30 @@
+{
+  "name": "yoshlar-mb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "dev": "nodemon ./src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alisher-Usmonov/yoshlar-mb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alisher-Usmonov/yoshlar-mb/issues"
+  },
+  "homepage": "https://github.com/Alisher-Usmonov/yoshlar-mb#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
