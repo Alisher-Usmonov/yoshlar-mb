@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",(()=>{(()=>{try{let e=document.querySelector(".menu"),t=document.querySelector(".close"),d=document.querySelector(".nav-list");e.addEventListener("click",(()=>{d.classList.remove("hidden"),d.classList.add("flex")})),t.addEventListener("click",(()=>{d.classList.remove("flex"),d.classList.add("hidden")}))}catch(e){}})()}))})();
+//# sourceMappingURL=bundle.js.map
