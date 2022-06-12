@@ -1,18 +1,64 @@
 <%- include("partials/header") %>
-<div
-  class="w-full min-h-screen bg-gradient-to-r from-blue-500 to-cyan-600 flex flex-col items-center justify-center"
->
-  <h1
-    class="text-[25px] text-center w-10/12 md:text-[30px] lg:text-[45px] font-bold tracking-wide text-white pb-2 border-b-2 border-gray-200"
-  >
-    Yoshlar Malumotlar bazasi platformasi
-  </h1>
-  <p
-    class="text-white mt-3 font-medium w-8/12 text-md lg:text-[18px] text-center"
-  >
-    Ushbu platforma orqali yoshlar barcha yangiliklardan xabardor bo'lishlari,
-    elektron kutubxonadan foydalanishlari va qulayliklarga ega bo'lishlari
-    mumkin
-  </p>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<div class="w-full h-screen relative">
+  <div class="swiper w-full h-full bg-red-300">
+    <div class="swiper-wrapper w-full h-full">
+      <div
+        class="swiper-slide w-full h-full flex items-center justify-center bg-[url('/public/images/slide1.jpg')] bg-cover bg-no-repeat"
+      >
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="text-[25px] text-center w-10/12 md:text-[30px] lg:text-[45px] font-bold tracking-wide text-white pb-2 border-b-2 border-gray-200"
+          >
+            Yoshlar Malumotlar bazasi platformasi
+          </h1>
+          <p
+            class="text-white mt-3 font-medium w-8/12 text-md lg:text-[18px] text-center"
+          >
+            Ushbu platforma orqali yoshlar barcha yangiliklardan xabardor
+            bo'lishlari, elektron kutubxonadan foydalanishlari va qulayliklarga
+            ega bo'lishlari mumkin
+          </p>
+        </div>
+      </div>
+      <div
+        class="swiper-slide w-full h-full flex items-center justify-center bg-[url('/public/images/slide2.jpg')] bg-cover bg-no-repeat"
+      >
+        <div class="flex items-center justify-center flex-col">
+          <h1
+            class="text-[25px] text-center w-10/12 md:text-[30px] lg:text-[45px] font-bold tracking-wide text-white pb-2 border-b-2 border-gray-200"
+          >
+            Yoshlar Malumotlar bazasi platformasi
+          </h1>
+          <p
+            class="text-white mt-3 font-medium w-8/12 text-md lg:text-[18px] text-center"
+          >
+            Ushbu platforma orqali yoshlar barcha yangiliklardan xabardor
+            bo'lishlari, elektron kutubxonadan foydalanishlari va qulayliklarga
+            ega bo'lishlari mumkin
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
 </div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+</script>
 <%- include("partials/footer") %>
